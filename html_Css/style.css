@@ -1,0 +1,1347 @@
+/*Styles spécifiques pour les ordinateurs*/
+body
+{
+    width: 100%;
+    height: auto;
+}
+        /** Section Header = contient un bloc d'une ligne et trois colonnes équivalant au logo et aux liens Hébergements et Activités
+        Prendre en compte le trait en haut du texte, de couleur bleue au survol */
+        #header 
+        { 
+            display: flex;  
+            flex-wrap:wrap;
+            justify-content: space-between;
+            max-width: 100%;
+        }
+
+        .logo
+            { 
+                display: flex;
+                flex-wrap: wrap;
+                justify-content : flex-start;
+                width: 10%;
+                height: 5%;
+                padding: 2% 60% 2% 6%;
+            }
+
+        #header >div:last-child
+            {
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: row;
+                width: 20%;
+                height: auto;
+            }
+
+            a:link.menu
+                {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                    text-decoration: none;
+                    color: black;
+                    font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                    font-weight: normal;
+                    text-align: center;
+                    background-color: white;
+                    padding: 40px 30px 5px 20px;
+                }
+
+
+            a:visited.menu
+                { 
+                    text-decoration: none;
+                    color: black;
+                }
+            a:hover.menu
+                { 
+                    border-top: #0065fc 2px solid;
+                    color: #0065fc; 
+                }
+
+        /** Section 1 = contient un Titre et un sous-titre */
+        .section1_h1
+            {
+            font-family: 'Raleway', 'Georgia', 'Times New Roman';
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0% 0% 1% 3%;
+            }
+
+        .section1_p
+            {
+            font-family: 'Raleway', 'Georgia', 'Times New Roman';
+            font-weight: normal;
+            font-size: 15px;
+            margin: 0% 0% 1% 3%;
+            }
+
+        /** Section 2 = contient une barre de recherche
+        - une icone localisation
+        - un texte variable
+        - un bouton bleu avec texte "Rechercher"*/ 
+        #barrederecherche 
+        {  
+            display: flex;
+            max-width: 40%;
+            margin: 2% 0% 3% 2%;
+        }
+            #iconelocalisation
+                {
+                    width: 15px;
+                    margin-left: 10px;
+                    padding: 15px;
+                    border-radius: 40px 0px 0px 40px;
+                    color: black;
+                    background-color: #f2f2f2;
+                }
+
+            #recherche
+                {
+                    width: 200px;
+                    padding: 10px 20px 10px 20px;
+                    font-size: 15px;
+                    font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                    font-weight: bold;
+                    color: black;
+                    border-style: none;
+                }
+
+            ::placeholder
+                {
+                    font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: black;
+                    border-style: none;
+                    padding: 2%;
+                }
+
+            #envoi
+                {
+                    width: 120px;
+                    border-style: none;
+                    border-radius: 0px 40px 40px 0px;
+                    font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                    font-size: 15px;
+                    font-weight: bold;
+                    background-color: #0065fc;
+                    color: white;
+                    padding: 0px;
+                }
+            #icone_search
+                {
+                    justify-content: center;
+                    width: 0px;
+                    padding-left: 60px;
+                    padding-right: 60px;
+                    align-items: center;
+                    visibility: visible;
+                    background-color: #0065fc;
+                    border-radius: 40px;
+                    color: white; 
+                    visibility: hidden;     
+                }
+            
+        /** Section 3 =  
+        - 4 filtres avec 4 icônes différentes
+        - des marges bleues qui sont les mêmes avec bords arrondis pour chaque filre*/
+        #section3 
+
+        {
+            width: 100%;
+            height: auto;
+            align-items: center;
+            margin-bottom: 2%;
+        }
+            #conteneur3
+            { 
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 800px;
+            }
+
+                #Filtres
+                {
+                font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                font-weight: bolder;
+                font-size: 16px;
+                margin:0% 0% 0% 4%;
+                }
+
+                .filtre
+                {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                max-width: 200px;
+                height: auto;
+                padding :0px;
+                font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                font-weight: bolder;
+                font-size: 15px;
+                background-color: white;
+                border: #d9d9d9 2px solid;
+                border-radius: 50px;
+                }
+
+                button:hover.filtre
+                {
+                    color :#0065fc; 
+                }
+
+                .textefiltres
+                {
+                
+                font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                font-weight: bolder;
+                font-style: normal;
+                font-size: 15px;
+                margin-left: 10px;
+                margin-right: 10px;
+                }
+                
+                .iconefiltre
+                {
+                display: flex;
+                width: 20px;
+                height: auto;
+                padding: 10px;
+                color: #0065fc;
+                background-color: #deebff;
+                border-radius: 80px;
+                margin: -2px 0px -2px -2px;
+                }
+
+        #section4
+        {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 2%;
+            margin-left: 3%;
+        }
+            
+            #iconeinfo
+            {
+            width: 5px;
+            color: #0065fc;
+            background-color: #deebff;
+            border-radius: 100px ;
+            padding: 5px 10px 5px 10px;
+            margin-right: 10px;
+            background-color: white;
+            border: 2px #f2f2f2 solid;
+            }
+
+            #legende
+            {
+            font-family: 'Raleway', 'Georgia', 'Times New Roman';
+            font-weight: normal;
+            font-size: 16px;
+            padding: 0px;
+            }
+
+
+        #section5  
+        {
+            display: flex;  
+            flex-wrap:wrap;
+            justify-content: space-around;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .icone_star
+            {
+                width: 10px;
+                color: #0065fc;
+            }
+
+        #conteneur5a
+            {
+                display: flex;  
+                flex-wrap:wrap;
+                justify-content: space-around;
+                align-items: center;
+                max-width: 760px;
+                height: auto;
+                background-color: #f2f2f2;
+                border-radius: 20px;
+            }
+                .element_heb
+                {
+                    display: flex;  
+                    flex-wrap:wrap;
+                    justify-content: flex-start;
+                    background-color: white;
+                    border-radius: 20px;
+                    max-width: 200px;
+                    height: 160px;
+                    margin: 5px 5px 20px 5px;
+                    padding: 0px;
+                    box-shadow: 2px 2px 2px 3px #e8e8e8;
+                }
+                    .photos_heb
+                        {
+                            display: flex;  
+                            flex-wrap:wrap;
+                            justify-content:space-around;
+                            width: 200px;
+                            height: 110px;
+                            margin: 0px;
+                            padding: 0px;
+                            border-top-right-radius: 10px;
+                            border-top-left-radius: 10px;
+                            object-fit:cover;
+                        }
+
+                    #Titre_Heb
+                    {
+                        font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                        font-weight: bold;
+                        font-size: 25px;
+                        margin: 30px 380px 30px 10px;
+                    }          
+
+                    .Nom_Heb
+                    {
+                        font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                        font-weight: bold;
+                        font-size: 0.7em;
+                        max-width: 200px;
+                        height: 10px;
+                        margin: 0px 30px 0px 10px;
+                    }
+
+                    .detail_heb
+                    {
+                        font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                        font-weight: normal;
+                        font-size: 0.6em;
+                        max-width: 200px;
+                        height: 10px;
+                        margin: 0px 80px 0px 10px;
+                    }
+
+                    .Star
+                    {
+                        display: flex;  
+                        flex-wrap:wrap;
+                        justify-content:flex-start;
+                        max-width: 200px;
+                        height: 10px;
+                        margin: 0px 110px 0px 10px;
+                        direction: rtl;
+                        float: left;
+                    }
+                        .Star svg 
+                            {
+                                float: right;
+                                color: #f2f2f2;
+                                text-decoration: none;
+                                transition: color .4s;                   
+                            }
+                        .Star svg:hover, .Star svg:focus, .Star svg:hover ~ svg, .Star svg:focus ~ svg 
+                            {
+                                color: #0065fc;
+                                cursor: pointer;
+                            }
+
+                    #cliquerPlus 
+                        {
+                            max-width: 200px;
+                            height: 10px;
+                            background-color: #f2f2f2;
+                            outline:none;
+                            cursor:pointer;
+                            font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                            text-align:center;
+                            font-weight: bolder;
+                            font-size: 0.9em;
+                            margin: 20px 600px 20px 20px;
+                            border-style: none;
+                        }
+                        #element_heb_cach
+                            {
+                                display:none;
+                                justify-content: flex-start;
+                                background-color: white;
+                                border-radius: 20px;
+                                max-width: 200px;
+                                height: 160px;
+                                margin: 5px 5px 20px 5px;
+                                padding: 0px;
+                                box-shadow: 2px 2px 2px 3px #e8e8e8;
+                            }  
+                        #cliquerPlus:focus + #element_heb_cach
+                            {
+                            display:block;
+                            justify-content: flex-start;
+                            }
+            
+            #conteneur5b
+                {
+                    display: flex;  
+                    flex-wrap:wrap;
+                    justify-content: space-around;
+                    align-items: center;
+                    max-width: 400px;
+                    height: auto;
+                    background-color: #f2f2f2;
+                    border-radius: 20px;
+                }
+
+                #pop_sondage
+                    {
+                        display: flex;  
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        align-items: center;
+                        width: 100%;
+                        height: auto; 
+                    }
+
+                    #Titre_Populaire
+                        {   
+                            font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                            font-weight: bold;
+                            font-size: 25px;
+                            margin: 20px 50px 10px 50px;
+                        }
+
+                    #iconesondage
+                    {
+                        width: 20px;
+                        color: black;
+                        margin: 20px 10px 0px 10px;
+                    
+                    }
+
+                .element_Populaire
+                    {
+                        display: flex;  
+                        flex-wrap:wrap;
+                        justify-content: space-around;
+                        background-color: white;
+                        border-radius: 20px;
+                        max-width: 300px;
+                        height: auto;
+                        padding: 3px;
+                        margin-bottom: 15px;
+                        box-shadow: 2px 2px 2px 2px #e8e8e8;
+                    }
+
+                    .element_Populaire >div:last-child
+                        {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    
+                    .photos_pop
+                        {
+                            display: flex;
+                            border-top-left-radius: 20px;
+                            border-bottom-left-radius: 20px;
+                            width: 130px;
+                            height: 110px;
+                            object-fit:cover;
+                        }
+
+                        .Nom_Pop
+                        {
+                            font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                            font-weight: bold;
+                            font-size: 0.7em;
+                            width: 120px;
+                            margin-left: 10px;
+                        }
+
+                        .detail_Pop
+                        {
+                            font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                            font-weight: normal;
+                            font-size: 0.6em;
+                            width: 120px;
+                            height: 10px;
+                            margin-left: 10px;
+                        }
+
+                        .Star2
+                            {
+                                display: flex;  
+                                flex-wrap:wrap;
+                                justify-content:flex-start;
+                                max-width: 120px;
+                                height: 10px;
+                                margin: auto 110px 7px 10px;
+                                direction: rtl;
+                                float: left;
+                            }
+
+                            .Star2 svg 
+                                {
+                                    float: right;
+                                    color: #f2f2f2;
+                                    text-decoration: none;
+                                    transition: color .4s;
+                                    direction:ltr;
+                                }
+
+                            .Star2 svg:hover,
+                            .Star2 svg:focus,
+                            .Star2 svg:hover ~ svg,
+                            .Star2 svg:focus ~ svg 
+                                {
+                                    color: #0065fc;
+                                    cursor: pointer;
+                                }
+
+                        
+
+
+        /** Section 6 : 
+        - 1 conteneur sur toute la largeur d'écran avec 6 blocs (photos+texte)
+        - répartition en colonne : 1 grand bloc, deux petits (un plus grand que l'autre), 1 grand, deux petits*/
+
+        #conteneur6 {
+            display: flex;  
+            flex-wrap:wrap;
+            justify-content: space-around;
+            flex-direction: row;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            align-items: center;
+            max-width: 100%;
+            height: auto;
+            padding: 0px;
+        }
+                #Titre_Activites
+                {
+                    display: flex;
+                    justify-content:flex-start;
+                    font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                    font-weight: bold;
+                    font-size: 25px;
+                    margin: 20px 960px 40px 10px;
+                }
+
+                .activite_bloc1
+                {
+                    display: flex;  
+                    flex-wrap:wrap;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    width: 270px;
+                    height: 440px;
+                    border-radius: 20px;
+                    background-color: white;
+                    box-shadow: 2px 2px 2px 2px #e8e8e8;
+                    object-fit:cover;
+                    
+                }
+                .double_bloc
+                {
+                    display:flex;
+                    flex-wrap:wrap;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 270px;
+                    height: 440px;
+                    padding: 0%;
+                    object-fit:cover;
+                    
+                    
+                }
+
+                .activite_bloc2
+                {
+                    border-radius: 20px;
+                    background-color: white;
+                    box-shadow: 2px 2px 2px 2px #e8e8e8;
+                    width: 270px;
+                    height: 200px;
+                    padding: 0%;
+                    object-fit:cover;
+                    
+                    
+                }
+
+                    .photo_activitesG
+                        {
+                            display: block;
+                            border-top-right-radius: 20px;
+                            border-top-left-radius: 20px;
+                            padding: 0px;
+                            width: 270px;
+                            height: 400px;
+                            object-fit:cover;
+
+                        }
+                    .photo_activites
+                        {
+                            display: block;
+                            border-top-right-radius: 20px;
+                            border-top-left-radius: 20px;
+                            padding: 0px;
+                            width: 270px;
+                            height: 160px;
+                            object-fit:cover;
+                        }
+
+
+                    .nom_activite
+                        {
+                            font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                            font-weight: bold;
+                            font-size: 12px;
+                            margin-left: 15px;
+                        }
+
+                    a:link.lien_activite
+                        {
+                            font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                            font-weight: bold;
+                            font-size: 30px;
+                            text-decoration: none;
+                            color: black;
+                            text-align: left;
+                        }
+                    a:visited.lien_activite
+                        { 
+                            text-decoration: none;
+                            color: black;
+                        }
+
+        footer
+        {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        background-color: #f2f2f2;
+        margin-top: 40px;
+        }
+
+
+        h3
+            {
+                font-weight: bold;
+                font-size: 14px;
+                font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                margin-top: 30px;
+                margin-right: 230px;
+                margin-left: 30px;
+            }
+
+        ul
+            {
+                list-style-type: none;
+                font-weight: normal;
+                font-size: 12px;
+                font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                margin-left: 30px;;
+                padding-left: 0px; 
+                
+            }
+        li
+            {
+                margin-bottom: 10px;
+            }
+
+
+
+/*Styles spécifiques pour les tablettes*/
+@media only screen and (max-width:992px) 
+{
+    @font-face 
+        {
+        font-family: 'Raleway';
+        src: url('Raleway-Italic-VariableFont_wght.ttf');
+        src: url('Raleway-VariableFont_wght.ttf');
+        }
+
+    /** Section Header = pas de changement */
+
+    /** Section 1 = adaptation taille de la police */
+        .section1_h1
+            {
+            font-size: 20px;
+            margin: 2% 0% 1% 3%;
+            }
+
+        .section1_p
+            {
+            font-size: 15px;
+            margin: 0% 0% 1% 3%;
+            }
+
+     /** Section 2 = légère augmentation de la taille de la barre de recherche*/ 
+     #barrederecherche
+        {  
+            display: flex;
+            max-width: 100%;
+            margin: 3% 0% 3% 2%;
+        }
+
+    /** Section 3 =  pas de chngement */
+
+    /** Section 4 =  pas de chngement */
+
+    /** Section 5 : changer la taille du conteneur a et b pour qu'ils se placent sur une seule ligne*/
+    #section5  
+
+        {
+            display: flex;  
+            flex-wrap:wrap;
+            justify-content: space-around;
+            max-width: 100%;
+            height: auto;
+        }
+
+        #conteneur5a
+            {
+                align-items: center;
+                max-width: 55%;
+                height: auto;
+            }
+                .element_heb
+                {
+                    max-width: 180px;
+                    height: 150px;
+                    margin: 5px 10px 15px 5px;
+                }
+                    .photos_heb
+                        {
+                            width: 180px;
+                            height: 100px;
+                            margin: 0px;
+                            padding: 0px;
+                            border-top-right-radius: 20px;
+                            border-top-left-radius: 20px;
+                            object-fit:cover;
+                        }
+
+                    #Titre_Heb
+                    {
+                        max-width: 100%;
+                        margin: 30px 130px 30px 20px;
+                        font-size: 22px;
+                    }          
+
+                    #cliquerPlus 
+                        {
+                            margin: 20px 300px 20px 10px;
+                        }
+                        #element_heb_cach
+                            {
+                                max-width: 180px;
+                                height: 150px;
+                            }  
+
+        #conteneur5b
+            {
+                max-width: 40%;
+                height: auto;
+            }
+
+                #Titre_Populaire
+                    {   
+                        max-width: 100%;
+                        font-size: 22px;
+                        margin: 0px 30px 10px 30px;
+                    }
+
+                #iconesondage
+                {
+                    margin: 0px 0px 0px 10px;
+                }
+
+            .element_Populaire
+                {
+                    max-width: 280px;
+                    height: auto;
+                    margin-bottom: 15px;
+                }
+                .photos_pop
+                {
+                    display: flex;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    width: 100px;
+                    height: 110px;
+                    object-fit:cover;
+                }
+
+                .Nom_Pop
+                {
+                    font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                    font-weight: bold;
+                    font-size: 12px;
+                    width: 100px;
+                    margin-left: 10px;
+                }
+
+                .detail_Pop
+                {
+                    font-family: 'Raleway', 'Georgia', 'Times New Roman';
+                    font-weight: normal;
+                    font-size: 12px;
+                    width: 120px;
+                    height: 10px;
+                    margin-left: 10px;
+                }
+
+
+    /** Section 6 : retravailler le Titre et la taille des conteneurs pour les placer sur une seule ligne*/
+            #Titre_Activites
+            {
+                margin: 20px 530px 40px 10px;
+            }
+
+            .activite_bloc1
+            {
+                width: 190px;
+                height: 270px;
+                object-fit:cover;
+                
+            }
+            .double_bloc
+            {
+                width: 190px;
+                height: 270px;
+                object-fit:cover;
+            }
+
+            .activite_bloc2
+            {
+                width: 190px;
+                height: 120px;
+                object-fit:cover;
+            }
+
+                .photo_activitesG
+                    {
+                        width: 190px;
+                        height: 230px;
+                        object-fit:cover;
+
+                    }
+                .photo_activites
+                    {
+                        width: 190px;
+                        height: 90px;
+                        object-fit:cover;
+                    }
+
+
+                .nom_activite
+                    {
+                        font-size: 12px;
+                        margin-left: 10px;
+                    }
+    /** Footer : retravailler les marges pour que les infos apparaissent sur une seule ligne*/
+
+        h3
+            {
+                margin-right: 130px;
+                margin-top: 20px;
+            }
+}
+
+/*Styles spécifiques pour les smartphones */
+@media only screen and (width:768px) 
+    { 
+        @font-face 
+        {
+        font-family: 'Raleway';
+        src: url('Raleway-Italic-VariableFont_wght.ttf');
+        src: url('Raleway-VariableFont_wght.ttf');
+        
+        }
+ /** Section Header : le logo doit être centré au dessus des liens et les visibles (bleues) lors du clic doivent être sous le texte*/
+        #header >div:last-child
+            {
+                display: flex;
+                justify-content:space-around;
+                flex-direction: row;
+                width: 100%;
+                height: auto;
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+            .logo
+            {   
+                width: 30%;
+                margin: 0px 0px 30px 280px;
+                padding: 0px;
+            }
+            a:link.menu
+                {
+                    border-bottom-color: #0065fc;
+                    border-top:none;
+                    padding: 20px 100px 40px 100px;
+                    margin-left: 0px;
+                    
+                }
+            a:hover.menu
+                {
+                    border-bottom: #0065fc 3px solid;
+                    color: #0065fc; 
+                }
+
+/** Section 1 = retravailler la taille de la police et les marges */
+        .section1_h1
+        {
+            font-size: 50px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }   
+
+        .section1_p
+        {
+            font-size: 25px;
+            margin-left: 25px;
+        }
+
+/** Section 2 = la barre de recherche s'étale sur la largeur de l'écran. 
+La taille des éléments doit être retravaillée.
+Le texte "Rechercher" est remplacer par une icône loupe*/ 
+        #barrederecherche 
+            {  
+                display: flex;
+                max-width: 100%;
+                justify-content: space-around;
+                margin: 10% 0% 10% 0%;
+            }
+
+          #iconelocalisation
+            {
+                width: 40px;
+                padding: 40px;
+                border-radius: 40px 0px 0px 40px;
+            }
+
+        #recherche
+            {
+                width: 430px;
+                padding: 10px 20px 10px 20px;
+                font-size: 35px;
+                margin: 0px;
+            }
+
+        ::placeholder
+            {
+                font-size: 35px;
+            }
+
+        #envoi
+            {
+                width: 0px;
+                font-size: 0px;
+                margin: 0px;
+                visibility: hidden;
+            }
+    
+        #icone_search
+            {
+                justify-content: center;
+                width: 40px;
+                padding-left: 50px;
+                padding-right: 50px;
+                align-items: center;
+                visibility: visible;
+                background-color: #0065fc;
+                border-radius: 40px;
+                color: white;      
+            }
+            
+
+/** Section 3 =  les filtres doivent s'étaler sur 3 lignes et garder les mêmes propriétés*/
+        #section3  
+        {
+            width: 100%;
+            height: auto;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+            #conteneur3
+            { 
+                max-width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+
+                #Filtres
+                {
+                font-size: 40px;
+                margin:0% 80% 0% 30px;
+                }
+
+                .filtre
+                {
+                max-width: 500px;
+                height: auto;
+                font-size: 35px;
+                margin :10px 20px 10px 20px;
+                }
+
+                .textefiltres
+                {
+                font-size: 35px;
+                margin-left: 20px;
+                margin-right: 20px;
+                }
+            
+                .iconefiltre
+                {
+                display: flex;
+                width: 40px;
+                height: auto;
+                padding: 30px;
+                }
+                
+/** Section 4 =  adaptation du texte, de l'icône et des marges*/
+        #section4
+        {
+            display: flex;
+            justify-content: flex-start;
+            align-items:center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+            
+            #iconeinfo
+            {
+                width: 15px;
+                padding: 10px 25px 10px 25px;
+                border: 8px #f2f2f2 solid;
+                margin-left: 0px;
+                margin-right: 10px;
+                
+            }
+    
+            #legende
+            {
+                font-size: 35px;
+                padding: 0px;
+            }
+
+/** Section 5 =  Inversement de l'ordre d'apparition des conteneurs Pop et Heb
+Adaptation de la taille des blocs, des éléments et des photos*/
+        #section5 
+        {
+            display: flex;  
+            flex-wrap:wrap-reverse;
+            align-items: center;
+            max-width: 100%;
+            height: auto;
+        }
+        
+            .icone_star
+                {
+                    width: 20px;
+                    color: #0065fc;
+                }
+        
+            #conteneur5a
+                {
+                    display: flex;  
+                    flex-wrap:wrap;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    align-items: center;
+                    max-width: 100%;
+                    height: auto;
+                    background-color: white;
+                    margin-top: 50px;
+                }
+                    .element_heb
+                    {
+                        display: flex;  
+                        flex-wrap:wrap;
+                        justify-content: flex-start;
+                        flex-direction: column;
+                        border-radius: 40px;
+                        max-width: 600px;
+                        height: auto;
+                        margin: 0px;
+                        margin-bottom: 40px;
+                        padding: 0px;
+                        box-shadow: 5px 5px 5px 5px #e8e8e8
+                    }
+                        .photos_heb
+                            {
+                                display: flex;  
+                                flex-wrap:wrap;
+                                justify-content:space-around;
+                                width: 600px;
+                                height: 250px;
+                                margin: 0px;
+                                margin-bottom: 10px;
+                                padding: 0px;
+                                border-top-right-radius: 40px;
+                                border-top-left-radius: 40px;
+                                object-fit:cover;
+                            }
+        
+                        #Titre_Heb
+                        {
+                            font-size: 45px;
+                            margin: 20px 100px 40px 0px;
+                        }          
+        
+                        .Nom_Heb
+                        {
+                            font-size: 30px;
+                            max-width: 400px;
+                            height: auto;
+                            margin: 0px 0px 0px 20px;
+                        }
+        
+                        .detail_heb
+                        {
+                            font-size: 25px;
+                            max-width: 400px;
+                            height: auto;
+                            margin: 10px 80px 0px 20px;
+                        }
+        
+                        .Star
+                        {
+                            display: flex;  
+                            flex-wrap:wrap;
+                            justify-content:flex-start;
+                            max-width: 400px;
+                            height: 20px;
+                            margin: 10px 480px 20px 20px;
+                            direction: rtl;
+                            float: left;
+                        }
+                            .Star svg 
+                                {
+                                    color: #0065fc;              
+                                }
+                            .Star svg:hover, .Star svg:focus, .Star svg:hover ~ svg, .Star svg:focus ~ svg 
+                                {
+                                    color: #0065fc;
+                                    cursor:pointer;
+                                }
+        
+                        #cliquerPlus 
+                            {
+                                max-width: 600px;
+                                height: auto;
+                                font-size: 30px;
+                                margin: 20px 490px 20px 40px;
+                                border-style: none;
+                                background-color: white;
+                            }
+                            #element_heb_cach
+                                {
+                                    display:none;
+                                    justify-content: flex-start;
+                                    background-color: white;
+                                    border-radius: 40px;
+                                    max-width: 600px;
+                                    height: auto;
+                                    margin: 5px 5px 20px 5px;
+                                    padding: 0px;
+                                    box-shadow: 2px 2px 2px 3px #e8e8e8;
+                                }  
+                #conteneur5b
+                    {
+                        display: flex;  
+                        flex-wrap:wrap;
+                        
+                        align-items: center;
+                        max-width: 100%;
+                        height: auto;
+                    }
+            
+                    #pop_sondage
+                        {
+                            display: flex;  
+                            flex-wrap: wrap;
+                            justify-content: flex-start;
+                            width: 100%;
+                            height: auto; 
+                        }
+        
+                        #Titre_Populaire
+                            {   
+                                font-size: 45px;
+                                font-weight: bold;
+                                margin: 50px 160px 50px 50px;
+                            }
+        
+                        #iconesondage
+                        {
+                            width: 40px;
+                            margin: 50px 40px 50px 40px;
+                        }
+        
+                    .element_Populaire
+                        {
+                            display: flex;  
+                            flex-wrap:wrap;
+                            justify-content: space-around;
+                            max-width: 100%;
+                            height: auto;
+                            margin: 0px 15px 30px 15px;
+                  
+                        }
+        
+                        .element_Populaire >div:last-child
+                            {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                        
+                            .photos_pop
+                                {
+                                    display: flex;
+                                    width: 270px;
+                                    height: 250px;
+                                    object-fit:cover;
+                                }
+        
+                            .Nom_Pop
+                                {
+                                    font-size: 30px;
+                                    width: 330px;
+                                    margin-bottom: 10px;
+                                    margin-left: 30px;
+                                }
+        
+                            .detail_Pop
+                                {
+                                    font-size: 28px;
+                                    width: 270px;
+                                    height: 10px;
+                                    margin-left: 30px;
+                                    margin-top: 10px;
+                                }
+        
+                            .Star2
+                                {
+                                    margin: auto 110px 15px 10px;
+                                }
+    
+                            .Star2 svg 
+                                {
+                                    float: right;
+                                    color:#0065fc;
+                                }
+
+/** Section 6 Tous les blocs sont à la même taille et apparaissent en colonne*/
+            #conteneur6 
+            {
+                display: flex;  
+                flex-wrap: wrap;
+                justify-content: space-around;
+                flex-direction: column;
+                margin-top: 40px;
+                margin-bottom: 30px;
+                align-items: center;
+                max-width: 100%;
+                height: auto;
+                padding: 0px;
+            }
+                    #Titre_Activites
+                    {
+                        display: flex;
+                        justify-content:flex-start;
+                        font-size: 50px;
+                        margin: 20px 200px 60px 20px;
+                    }
+
+                    .activite_bloc1
+                    {
+                        width: 650px;
+                        height: auto;
+                        border-radius: 40px;
+                        box-shadow: 5px 5px 5px 5px #e8e8e8;
+                        margin-bottom: 50px;
+                    }
+                        .photo_activitesG
+                        {
+                            display: block;
+                            border-top-right-radius: 40px;
+                            border-top-left-radius: 40px;
+                            padding: 0px;
+                            width: 650px;
+                            height: 250px;
+                        }
+
+                    .double_bloc
+                    {
+                        width: 650px;
+                        height: auto;
+                        object-fit:cover;
+                    }
+        
+                    .activite_bloc2
+                    {
+                        border-radius: 40px;
+                        box-shadow: 5px 5px 5px 5px #e8e8e8;
+                        width: 650px;
+                        height: auto;
+                        padding: 0%;
+                        object-fit:cover;
+                        margin-bottom: 40px;
+                    }
+                        .photo_activites
+                        {
+                            display: block;
+                            border-top-right-radius: 40px;
+                            border-top-left-radius: 40px;
+                            padding: 0px;
+                            width: 650px;
+                            height: 250px;
+                            object-fit:cover;
+                        }
+
+
+                .nom_activite
+                    {
+                        font-size: 30px;
+                        margin-left: 30px;
+                    }
+
+/** Footer : les sections de texte apparaissent en colonne*/
+            #section_footer
+                {
+                    flex-direction: column;
+                    align-items:baseline;
+                    max-width: 100%;
+                    height: auto;
+                    text-align: left;
+                    margin-top: 40px;
+                }
+
+                h3
+                    {
+                        font-size: 40px;
+                        width: 100%;
+                    }
+
+                ul
+                    {                        
+                        font-size: 25px;
+                        width: 100%
+                    }
+                li
+                    {
+                        margin-bottom: 10px;
+                        width: 100%;
+                    }
+    }
